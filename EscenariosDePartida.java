@@ -6,21 +6,21 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * The test class EscenariosDePartida.
+ * The test class escenariosDePartida.
  *
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class EscenariosDePartida
+public class escenariosDePartida
 {
     private MailServer gmailServer;
     private MailClient clientePepe;
     private MailClient clienteMaria;
 
     /**
-     * Default constructor for test class EscenariosDePartida
+     * Default constructor for test class escenariosDePartida
      */
-    public EscenariosDePartida()
+    public escenariosDePartida()
     {
     }
 
@@ -35,6 +35,7 @@ public class EscenariosDePartida
         gmailServer = new MailServer();
         clientePepe = new MailClient(gmailServer, "pepe@gmail.com");
         clienteMaria = new MailClient(gmailServer, "maria@gmail.com");
+        clientePepe.sendMailItem("maria@gmail.com", "Hola María");
     }
 
     /**
