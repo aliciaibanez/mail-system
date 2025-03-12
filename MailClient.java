@@ -57,8 +57,7 @@ public class MailClient
     }
 
     public int getNumberOfMessageInServer() {
-        int number = 0;
-        return number;
+        return server.howManyMailItems(user);
     }
 
     public MailItem getLastReceivedMail() {
